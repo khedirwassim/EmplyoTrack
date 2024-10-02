@@ -17,7 +17,7 @@ public class EmployeeAdapter extends BaseAdapter {
     Context context;
     ArrayList<EmployeeClass> arrayList;
 
-    public EmployeeAdapter(Context context, ArrayList<EmployeeClass> arrayList) {
+    public EmployeeAdapter(Context context, ArrayList<EmployeeClass> arrayList) { 
         this.context = context;
         this.arrayList = arrayList;
     }
