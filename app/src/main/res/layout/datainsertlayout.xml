@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/profile">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/info_bg"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:id="@+id/identifiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/layout_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+
+                android:id="@+id/tv_id"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="ID:"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="104dp"
+                />
+
+            <EditText
+                android:id="@+id/ET_id"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="7dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="ID"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="125dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutfname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/layout_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/identifiant">
+
+            <TextView
+                android:id="@+id/tv_f_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Nom:"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="104dp"
+                />
+
+            <EditText
+                android:id="@+id/ET_f_name"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="7dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Nom"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="125dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutlname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/layout_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutfname">
+
+            <TextView
+                android:id="@+id/tv_l_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Prénom:"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="104dp"
+                 />
+
+           <EditText
+                android:id="@+id/ET_l_name"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="7dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Prénom"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="125dp"
+                tools:layout_editor_absoluteY="101dp" />
+
+        </LinearLayout>
+
+      <LinearLayout
+         android:id="@+id/layoutphone"
+         android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:layout_marginTop="8dp"
+         android:gravity="center_vertical"
+         android:paddingHorizontal="16dp"
+          android:background="@drawable/layout_bg"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/layoutlname">
+
+         <TextView
+             android:id="@+id/tv_phone"
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"
+             android:text="Téléphone:"
+             android:textColor="@color/white"
+             android:textSize="18dp"
+             tools:layout_editor_absoluteX="12dp"
+             tools:layout_editor_absoluteY="104dp"
+             />
+
+        <EditText
+             android:id="@+id/ET_phone"
+             android:layout_width="0dp"
+             android:layout_height="40dp"
+             android:layout_marginStart="7dp"
+             android:layout_weight="1"
+             android:ems="10"
+             android:hint="Numéro"
+             android:textAlignment="center"
+             android:inputType="textPersonName"
+             tools:layout_editor_absoluteX="125dp"
+             tools:layout_editor_absoluteY="101dp" />
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/layoutmail"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="8dp"
+         android:gravity="center_vertical"
+         android:paddingHorizontal="16dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:background="@drawable/layout_bg"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/layoutphone">
+
+         <TextView
+             android:id="@+id/tv_mail"
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"
+             android:text="E_Mail:"
+             android:textColor="@color/white"
+             android:textSize="18dp"
+             tools:layout_editor_absoluteX="12dp"
+             tools:layout_editor_absoluteY="104dp" />
+
+         <EditText
+             android:id="@+id/ET_mail"
+             android:layout_width="0dp"
+             android:layout_height="40dp"
+             android:layout_marginStart="7dp"
+             android:layout_weight="1"
+             android:ems="10"
+             android:hint="E_Mail"
+             android:textAlignment="center"
+             android:inputType="textPersonName"
+             tools:layout_editor_absoluteX="125dp"
+             tools:layout_editor_absoluteY="101dp" />
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/layoutimage"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:gravity="center_vertical"
+         android:background="@drawable/layout_bg"
+         android:paddingHorizontal="16dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/layoutmail">
+
+         <TextView
+             android:id="@+id/tvimage"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Ajouter une image"
+             android:textAlignment="center"
+             android:textColor="@color/white"
+             android:textSize="15dp"
+             tools:layout_editor_absoluteX="12dp"
+             tools:layout_editor_absoluteY="104dp" />
+
+         <ImageView
+             android:id="@+id/selectedimage"
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:layout_marginEnd="16dp"
+             android:src="@drawable/user"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

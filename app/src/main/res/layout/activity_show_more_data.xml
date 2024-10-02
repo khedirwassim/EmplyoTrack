@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile"
+    tools:context=".showMoreDataActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewDataShow"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/info_bg"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user"
+        tools:srcCompat="@drawable/user"/>
+
+    <LinearLayout
+        android:id="@+id/infoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/info_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDataShow"
+        app:layout_constraintVertical_bias="0.135"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/lLR1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_bg"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDataShow">
+
+            <TextView
+                android:id="@+id/tVSL1"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="ID:"
+                android:textColor="@color/white"
+                android:textSize="50px"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <TextView
+                android:id="@+id/tVSR1"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/id_here"
+                android:textColor="@color/purple_200"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="237dp"
+                tools:layout_editor_absoluteY="292dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLR2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/layout_bg"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLR1">
+
+            <TextView
+                android:id="@+id/tVSL2"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="Nom:"
+                android:textColor="@color/white"
+                android:textSize="50px"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <TextView
+                android:id="@+id/tVSR2"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="nom here"
+                android:textColor="@color/purple_200"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="237dp"
+                tools:layout_editor_absoluteY="292dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLR3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/layout_bg"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLR2">
+
+            <TextView
+                android:id="@+id/tVSL3"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="Prénom:"
+                android:textColor="@color/white"
+                android:textSize="50px"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <TextView
+                android:id="@+id/tVSR3"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Prenom here"
+                android:textColor="@color/purple_200"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="237dp"
+                tools:layout_editor_absoluteY="292dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLR4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/layout_bg"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLR3">
+
+            <TextView
+                android:id="@+id/tVSL4"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:textColor="@color/white"
+                android:textSize="50px"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <TextView
+                android:id="@+id/tVSR4"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="phone here"
+                android:textColor="@color/purple_200"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="237dp"
+                tools:layout_editor_absoluteY="292dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLR5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/layout_bg"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLR4">
+
+            <TextView
+                android:id="@+id/tVSL5"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="E_mail:"
+                android:textColor="@color/white"
+                android:textSize="50px"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <TextView
+                android:id="@+id/tVSR5"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Email here"
+                android:textColor="@color/purple_200"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="237dp"
+                tools:layout_editor_absoluteY="292dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLR6"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLR5">
+
+
+            <Button
+                android:id="@+id/buttoncall"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/layout_bg"
+                android:text="appel"
+                android:textColor="@color/white"
+                android:textSize="50px"
+                android:textStyle="bold"
+                app:icon="@android:drawable/stat_sys_phone_call"
+
+                />
+
+            <Button
+                android:id="@+id/buttonsms"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/layout_bg"
+                android:filterTouchesWhenObscured="false"
+                android:text="SMS"
+                android:textColor="@color/white"
+                android:textSize="50px"
+                android:textStyle="bold"
+                app:icon="@android:drawable/ic_menu_send" />
+
+            <Button
+                android:id="@+id/buttonM"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/layout_bg"
+                android:textColor="@color/white"
+                android:textSize="50px"
+                android:textStyle="bold"
+                app:icon="@android:drawable/ic_dialog_email" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DAMPROJECT</string>
+    <string name="ajouter">ajouter</string>
+    <string name="address_mail">Address mail:</string>
+    <string name="enter_l_identifiant">enter l\'identifiant</string>
+    <string name="nome">Nome</string>
+    <string name="prenome">Prenome</string>
+    <string name="mail">Mail</string>
+    <string name="identifiant">Identifiant:</string>
+    <string name="id_here">id here</string>
+    <string name="todo">TODO</string>
+</resources>
